@@ -430,9 +430,9 @@ export default function Home() {
               marginBottom: "1.5rem",
             }}
           >
-            Starten Sie jetzt Ihren
+            Starten Sie jetzt
             <br />
-            <em style={{ color: "var(--color-primary)", fontStyle: "italic" }}>individuellen Sanierungsfahrplan</em>
+            <em style={{ color: "var(--color-primary)", fontStyle: "italic" }}>Ihre Sanierung</em>
           </h2>
           <p style={{ fontSize: "1.05rem", color: "var(--color-text-muted)", lineHeight: 1.7, marginBottom: "2.5rem" }}>
             Gemeinsam analysieren wir Ihr Gebäude und entwickeln einen maßgeschneiderten Stufenplan –
