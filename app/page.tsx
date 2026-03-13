@@ -288,29 +288,6 @@ export default function Home() {
               </div>
             </div>
 
-            <div
-              style={{
-                position: "absolute",
-                top: "-16px",
-                right: "0px",
-                background: "var(--color-secondary)",
-                color: "#FAF7F2",
-                borderRadius: "50%",
-                width: "80px",
-                height: "80px",
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "center",
-                justifyContent: "center",
-                boxShadow: "0 4px 20px rgba(139,69,19,0.3)",
-                fontSize: "0.65rem",
-                textAlign: "center",
-                lineHeight: 1.3,
-                fontWeight: 600,
-              }}
-            >
-              BAFA<br />zugelassen
-            </div>
           </div>
         </div>
       </section>
