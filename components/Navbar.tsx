@@ -51,7 +51,7 @@ export default function Navbar() {
         {/* Logo */}
         <Link href="/" style={{ display: "flex", alignItems: "center", textDecoration: "none", marginTop: "52px" }}>
           <Image
-            src="/logo.png.png"
+            src="/logo2.png.png"
             alt="Planungsbüro Bless"
             width={160}
             height={80}
