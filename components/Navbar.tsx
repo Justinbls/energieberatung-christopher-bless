@@ -42,19 +42,19 @@ export default function Navbar() {
           maxWidth: "1200px",
           margin: "0 auto",
           padding: "0 2rem",
-          height: "72px",
+          height: "88px",
           display: "flex",
           alignItems: "center",
           justifyContent: "space-between",
         }}
       >
         {/* Logo */}
-        <Link href="/" style={{ display: "flex", alignItems: "center", textDecoration: "none" }}>
+        <Link href="/" style={{ display: "flex", alignItems: "center", textDecoration: "none", marginTop: "52px" }}>
           <Image
             src="/logo.png.png"
             alt="Planungsbüro Bless"
-            width={120}
-            height={60}
+            width={160}
+            height={80}
             style={{ objectFit: "contain" }}
             priority
           />
