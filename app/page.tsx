@@ -150,32 +150,6 @@ export default function Home() {
           className="hero-grid"
         >
           <div>
-            <div
-              style={{
-                display: "inline-flex",
-                alignItems: "center",
-                gap: "0.5rem",
-                background: "var(--color-surface)",
-                border: "1px solid var(--color-border)",
-                borderRadius: "100px",
-                padding: "0.35rem 1rem",
-                marginBottom: "2rem",
-                fontSize: "0.8rem",
-                color: "var(--color-primary)",
-                fontWeight: 500,
-              }}
-            >
-              <span
-                style={{
-                  width: "6px",
-                  height: "6px",
-                  borderRadius: "50%",
-                  background: "var(--color-primary)",
-                  display: "inline-block",
-                }}
-              />
-              Zertifizierter Energieberater · BAFA zugelassen
-            </div>
 
             <h1
               style={{
