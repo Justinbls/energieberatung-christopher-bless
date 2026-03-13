@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Sans+3:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@import "tailwindcss";
+
+:root {
+  --color-primary: #2D5016;
+  --color-primary-light: #3D6B1F;
+  --color-primary-dark: #1E3610;
+  --color-secondary: #8B4513;
+  --color-secondary-light: #A0522D;
+  --color-accent: #C8A96E;
+  --color-background: #FAF7F2;
+  --color-surface: #F0EBE1;
+  --color-surface-dark: #E4DDD0;
+  --color-text: #1C1C1C;
+  --color-text-muted: #6B6B5A;
+  --color-border: #D4C9B8;
+}
+
+@theme inline {
+  --color-background: var(--color-background);
+  --color-foreground: var(--color-text);
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body: 'Source Sans 3', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: 'Source Sans 3', system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Grain texture overlay */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.025;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 256px 256px;
+}
+
+/* Typography */
+h1, h2, h3, h4 {
+  font-family: 'Playfair Display', Georgia, serif;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.font-display {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+.font-mono-tech {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.85em;
+  letter-spacing: 0.05em;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-surface);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+  border-radius: 3px;
+}
+
+/* Utility classes */
+.text-primary { color: var(--color-primary); }
+.text-secondary { color: var(--color-secondary); }
+.text-accent { color: var(--color-accent); }
+.text-muted { color: var(--color-text-muted); }
+.bg-primary { background-color: var(--color-primary); }
+.bg-surface { background-color: var(--color-surface); }
+.bg-surface-dark { background-color: var(--color-surface-dark); }
+.border-color { border-color: var(--color-border); }
+
+/* Organic shape decorators */
+.blob-1 {
+  border-radius: 60% 40% 70% 30% / 50% 60% 40% 50%;
+}
+.blob-2 {
+  border-radius: 40% 60% 30% 70% / 60% 40% 50% 50%;
+}
+
+/* Line accent */
+.line-accent::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: var(--color-secondary);
+  margin-top: 0.75rem;
+}
+
+.line-accent-center::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: var(--color-secondary);
+  margin: 0.75rem auto 0;
+}
