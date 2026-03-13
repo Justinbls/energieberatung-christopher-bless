@@ -140,7 +140,7 @@ export default function Home() {
           style={{
             maxWidth: "1200px",
             margin: "0 auto",
-            padding: "6rem 2rem 6rem 4rem",
+            padding: "3rem 2rem 3rem 4rem",
             display: "grid",
             gridTemplateColumns: "1fr 1fr",
             gap: "4rem",
@@ -294,7 +294,7 @@ export default function Home() {
 
 
       {/* LEISTUNGEN */}
-      <section ref={servicesRef} style={{ padding: "7rem 2rem", background: "var(--color-background)" }}>
+      <section ref={servicesRef} style={{ padding: "4rem 2rem", background: "var(--color-background)" }}>
         <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
           <div style={{ marginBottom: "4rem" }}>
             <div style={{ fontSize: "0.75rem", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--color-secondary)", marginBottom: "1rem", fontWeight: 500 }}>
