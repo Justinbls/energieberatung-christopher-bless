@@ -18,9 +18,10 @@ export async function POST(req: NextRequest) {
     },
   });
 
-  await transporter.sendMail({
+  try {
+    await transporter.sendMail({
     from: `"Website Kontaktformular" <${process.env.SMTP_USER}>`,
-    to: "bless@planungsbuero-bless.de",
+    to: "jbless@energieberatung-bless.de",
     replyTo: email,
     subject: `Neue Anfrage von ${name}${leistung ? ` – ${leistung}` : ""}`,
     html: `
@@ -55,7 +56,12 @@ export async function POST(req: NextRequest) {
         </div>
       </div>
     `,
-  });
+    });
+  } catch (err: unknown) {
+    const message = err instanceof Error ? err.message : String(err);
+    console.error("SMTP Fehler:", message);
+    return NextResponse.json({ error: message }, { status: 500 });
+  }
 
   return NextResponse.json({ success: true });
 }
