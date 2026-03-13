@@ -1,24 +1,28 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Leistungen – Energieberatung & Planung",
+  title: "Leistungen – Heizlastberechnung & iSFP Mönchengladbach",
   description:
-    "Unsere Leistungen: Heizlastberechnung nach DIN TS 12831, Hydraulischer Abgleich Verfahren B, Individueller Sanierungsfahrplan (iSFP), Einzelmaßnahmen und Effizienzhaus-Sanierung in Mönchengladbach.",
+    "Heizlastberechnung nach DIN EN 12831, Hydraulischer Abgleich Förderung, Wärmeschutznachweis für Förderanträge, Individueller Sanierungsfahrplan (iSFP) und Energetische Baubegleitung KfW – Planungsbüro Bless Mönchengladbach.",
   keywords: [
-    "Heizlastberechnung DIN TS 12831",
-    "Hydraulischer Abgleich Verfahren B",
-    "Sanierungsfahrplan iSFP",
+    "Heizlastberechnung nach DIN EN 12831",
+    "Hydraulischer Abgleich Förderung",
+    "Wärmeschutznachweis für Förderanträge",
+    "Individueller Sanierungsfahrplan iSFP Vorteile",
+    "Energetische Baubegleitung KfW",
+    "iSFP Mönchengladbach",
+    "Sanierungsfahrplan erstellen lassen Mönchengladbach",
     "Einzelmaßnahmen BAFA",
     "Effizienzhaus KfW",
-    "Energieberatung Leistungen",
+    "Energieberatung Mönchengladbach",
   ],
   alternates: {
     canonical: "https://www.planungsbuero-bless.de/leistungen",
   },
   openGraph: {
-    title: "Leistungen – Planungsbüro Bless",
+    title: "Leistungen – Heizlastberechnung & iSFP Mönchengladbach | Planungsbüro Bless",
     description:
-      "Heizlastberechnung, Hydraulischer Abgleich, Sanierungsfahrplan, Einzelmaßnahmen und Effizienzhaus – alle Leistungen des Planungsbüros Bless.",
+      "Heizlastberechnung nach DIN EN 12831, Hydraulischer Abgleich, Wärmeschutznachweis, Sanierungsfahrplan (iSFP) und Energetische Baubegleitung KfW – alle Leistungen in Mönchengladbach.",
     url: "https://www.planungsbuero-bless.de/leistungen",
   },
 };

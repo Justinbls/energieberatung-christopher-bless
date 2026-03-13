@@ -1,13 +1,16 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Über uns – Zertifizierter Energieberater",
+  title: "Über uns – Energieeffizienz-Experte Mönchengladbach",
   description:
-    "Planungsbüro Bless – Ihr zertifizierter Energieberater in Mönchengladbach. Gebäudeenergieberater (HWK), eingetragener Energieeffizienz Experte und staatlich geprüfter Hochbautechniker mit über 10 Jahren Erfahrung.",
+    "Planungsbüro Bless – Ihr Energieeffizienz-Experte in Mönchengladbach. Gebäudeenergieberater (HWK), eingetragener Energieberater für BAFA & KfW Förderprogramme, staatlich geprüfter Hochbautechniker. 10 Jahre Erfahrung.",
   keywords: [
     "Energieberater Mönchengladbach",
+    "Energieeffizienz-Experte Mönchengladbach",
     "Gebäudeenergieberater HWK",
-    "Energieeffizienz Experte",
+    "Wie finde ich einen zertifizierten Energieberater",
+    "BAFA zugelassener Energieberater",
+    "KfW Energieberater Mönchengladbach",
     "Christopher Bless",
     "Planungsbüro Bless",
   ],
@@ -15,9 +18,9 @@ export const metadata: Metadata = {
     canonical: "https://www.planungsbuero-bless.de/ueber-uns",
   },
   openGraph: {
-    title: "Über uns – Planungsbüro Bless",
+    title: "Über uns – Energieeffizienz-Experte Mönchengladbach | Planungsbüro Bless",
     description:
-      "Zertifizierter Energieberater mit über 10 Jahren Erfahrung. Gebäudeenergieberater (HWK), Eingetragener Energieeffizienz Experte, Staatlich geprüfter Hochbautechniker.",
+      "Ihr Energieeffizienz-Experte in Mönchengladbach mit 10 Jahren Erfahrung. Gebäudeenergieberater (HWK), eingetragener Experte für BAFA & KfW Förderprogramme.",
     url: "https://www.planungsbuero-bless.de/ueber-uns",
   },
 };

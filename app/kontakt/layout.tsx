@@ -1,23 +1,26 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Kontakt – Beratungsgespräch anfragen",
+  title: "Kontakt – Energieberater Mönchengladbach | BAFA & KfW Förderung anfragen",
   description:
-    "Nehmen Sie Kontakt mit Planungsbüro Bless auf. Kostenloses Erstgespräch zur Energieberatung in Mönchengladbach und Umgebung. Antwort innerhalb von 24 Stunden.",
+    "Energieberater Kosten Mönchengladbach – jetzt kostenloses Erstgespräch anfragen. BAFA Zuschuss Energieberatung beantragen, iSFP Förderung 2026, KfW Fördermittel Heizungstausch. Antwort in 24 Stunden.",
   keywords: [
+    "Energieberater Kosten Mönchengladbach",
+    "iSFP Förderung BAFA 2026",
+    "BAFA Zuschuss Energieberatung beantragen",
+    "KfW Fördermittel Heizungstausch Beratung",
+    "Energieberatung anfragen Mönchengladbach",
+    "Sanierungsfahrplan erstellen lassen Mönchengladbach",
     "Energieberater Kontakt",
-    "Beratungsgespräch Energieberatung",
-    "Energieberatung anfragen",
     "Planungsbüro Bless Kontakt",
-    "Mönchengladbach Energieberatung",
   ],
   alternates: {
     canonical: "https://www.planungsbuero-bless.de/kontakt",
   },
   openGraph: {
-    title: "Kontakt – Planungsbüro Bless",
+    title: "Kontakt – Energieberater Mönchengladbach | BAFA & KfW Förderung anfragen",
     description:
-      "Kostenloses Erstgespräch zur Energieberatung anfragen. Antwort innerhalb von 24 Stunden.",
+      "Kostenloses Erstgespräch zur Energieberatung anfragen. BAFA Zuschuss & KfW Förderung 2026 – Antwort innerhalb von 24 Stunden.",
     url: "https://www.planungsbuero-bless.de/kontakt",
   },
 };
