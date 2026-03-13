@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const qualifications = [
   {
@@ -149,58 +150,16 @@ export default function UeberUnsPage() {
                 aspectRatio: "4/5",
                 maxWidth: "400px",
                 overflow: "hidden",
+                position: "relative",
               }}
             >
-              <svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg" style={{ width: "100%", height: "100%", display: "block" }}>
-                {/* Background */}
-                <rect width="400" height="500" fill="#F5F0E8" />
-
-                {/* Sun: tan filled circle + offset outline ring – logo style */}
-                <circle cx="302" cy="92" r="50" fill="#C8A87C" />
-                <circle cx="278" cy="106" r="50" fill="none" stroke="#333" strokeWidth="3" />
-
-                {/* Background house (right, drawn first so main house covers it) */}
-                <polyline points="282,278 336,212 385,278 385,382 282,382 282,278"
-                  fill="#F5F0E8" stroke="#333" strokeWidth="2.5" strokeLinejoin="round" strokeLinecap="round" />
-
-                {/* Tree 1 – left, taller (logo leaf shape with diagonal stripes) */}
-                <path d="M50,220 C67,212 76,240 72,280 C68,308 28,309 24,280 C20,240 33,212 50,220Z"
-                  fill="#6BBF35" stroke="#333" strokeWidth="2.5" />
-                <line x1="34" y1="242" x2="62" y2="268" stroke="#333" strokeWidth="1.8" />
-                <line x1="30" y1="268" x2="58" y2="294" stroke="#333" strokeWidth="1.8" />
-                <line x1="50" y1="309" x2="50" y2="382" stroke="#333" strokeWidth="2.5" strokeLinecap="round" />
-
-                {/* Tree 2 – slightly right, slightly smaller */}
-                <path d="M85,246 C99,239 107,262 104,293 C100,317 68,318 65,293 C61,262 71,239 85,246Z"
-                  fill="#6BBF35" stroke="#333" strokeWidth="2.5" />
-                <line x1="70" y1="263" x2="96" y2="287" stroke="#333" strokeWidth="1.8" />
-                <line x1="67" y1="285" x2="93" y2="309" stroke="#333" strokeWidth="1.8" />
-                <line x1="85" y1="318" x2="85" y2="382" stroke="#333" strokeWidth="2.5" strokeLinecap="round" />
-
-                {/* Main house – outline only, background fill to cover bg house behind it */}
-                <path d="M112,280 L112,382 L186,382 L186,318 L248,318 L248,382 L318,382 L318,280"
-                  fill="#F5F0E8" stroke="#333" strokeWidth="3" strokeLinejoin="round" strokeLinecap="round" />
-                {/* Roof */}
-                <polyline points="97,284 215,178 333,284"
-                  fill="none" stroke="#333" strokeWidth="3" strokeLinejoin="round" strokeLinecap="round" />
-
-                {/* Ground line */}
-                <line x1="22" y1="382" x2="388" y2="382" stroke="#333" strokeWidth="3" strokeLinecap="round" />
-
-                {/* Person with clipboard – right side, logo line-art style */}
-                <circle cx="354" cy="333" r="13" fill="none" stroke="#333" strokeWidth="2.5" />
-                <line x1="354" y1="346" x2="354" y2="370" stroke="#333" strokeWidth="2.5" strokeLinecap="round" />
-                <line x1="354" y1="354" x2="338" y2="365" stroke="#333" strokeWidth="2.5" strokeLinecap="round" />
-                <line x1="354" y1="354" x2="370" y2="362" stroke="#333" strokeWidth="2.5" strokeLinecap="round" />
-                <line x1="354" y1="370" x2="346" y2="382" stroke="#333" strokeWidth="2.5" strokeLinecap="round" />
-                <line x1="354" y1="370" x2="362" y2="382" stroke="#333" strokeWidth="2.5" strokeLinecap="round" />
-                {/* Clipboard */}
-                <rect x="367" y="357" width="16" height="20" rx="2" fill="none" stroke="#333" strokeWidth="2" />
-                <rect x="372" y="354" width="6" height="6" rx="1" fill="none" stroke="#333" strokeWidth="1.8" />
-                <line x1="370" y1="363" x2="380" y2="363" stroke="#333" strokeWidth="1.5" />
-                <line x1="370" y1="368" x2="380" y2="368" stroke="#333" strokeWidth="1.5" />
-                <line x1="370" y1="373" x2="376" y2="373" stroke="#333" strokeWidth="1.5" />
-              </svg>
+              <Image
+                src="/portrait.png.png"
+                alt="Planungsbüro Bless – Christopher Bless"
+                fill
+                style={{ objectFit: "cover", objectPosition: "center top" }}
+                priority
+              />
             </div>
           </div>
         </div>
