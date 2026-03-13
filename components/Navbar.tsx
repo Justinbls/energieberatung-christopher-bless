@@ -49,13 +49,13 @@ export default function Navbar() {
         }}
       >
         {/* Logo */}
-        <Link href="/" style={{ display: "flex", alignItems: "center", textDecoration: "none", marginTop: "52px" }}>
+        <Link href="/" style={{ display: "flex", alignItems: "center", textDecoration: "none", marginTop: scrolled ? "0px" : "52px", transition: "margin-top 0.3s ease" }}>
           <Image
             src="/logo2.png.png"
             alt="Planungsbüro Bless"
-            width={240}
-            height={120}
-            style={{ objectFit: "contain" }}
+            width={scrolled ? 140 : 240}
+            height={scrolled ? 70 : 120}
+            style={{ objectFit: "contain", transition: "width 0.3s ease, height 0.3s ease" }}
             priority
           />
         </Link>
