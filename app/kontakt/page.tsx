@@ -300,7 +300,7 @@ export default function KontaktPage() {
                       </svg>
                     ),
                     label: "E-Mail",
-                    value: "info@bless-energieberatung.de",
+                    value: "bless@planungsbuero-bless.de",
                   },
                   {
                     icon: (
