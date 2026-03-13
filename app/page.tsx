@@ -192,7 +192,7 @@ export default function Home() {
               }}
             >
               Von der präzisen Heizlastberechnung bis zum individuellen Sanierungsfahrplan –
-              ich begleite Sie auf dem Weg zum energieeffizienten Gebäude.
+              wir begleiten Sie auf dem Weg zum energieeffizienten Gebäude.
             </p>
 
             <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap" }}>

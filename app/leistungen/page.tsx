@@ -66,7 +66,7 @@ const services = [
     title: "Begleitung von Einzelmaßnahmen",
     norm: "BAFA-Antragstellung",
     tagline: "Vom Angebot bis zur Abrechnung",
-    description: `Bei der Sanierung mit Einzelmaßnahmen begleite ich Sie durch den gesamten Prozess –
+    description: `Bei der Sanierung mit Einzelmaßnahmen begleiten wir Sie durch den gesamten Prozess –
     von der ersten Beratung über die Beantragung von Fördermitteln bis zur abschließenden Dokumentation.
     Förderfähige Maßnahmen umfassen unter anderem Dämmung, Fenstererneuerung und Heizungstausch.`,
     details: [
@@ -86,7 +86,7 @@ const services = [
     norm: "KfW-Effizienzhaus",
     tagline: "Ganzheitlich sanieren – maximal fördern",
     description: `Die Effizienzhaus-Sanierung ist die umfangreichste Form der energetischen Gebäudeverbesserung.
-    Als zugelassener Energieberater begleite ich Sie von der Planung bis zur Fertigstellung –
+    Als zugelassenes Planungsbüro begleiten wir Sie von der Planung bis zur Fertigstellung –
     bei der Sanierung bestehender Gebäude ebenso wie beim energieeffizienten Neubau.`,
     details: [
       "Erstellung des Energieausweises und Nachweisplanung",
@@ -198,12 +198,12 @@ export default function LeistungenPage() {
               marginBottom: "1.5rem",
             }}
           >
-            Was ich für Sie
+            Was wir für Sie
             <br />
-            <em style={{ color: "var(--color-primary)", fontStyle: "italic" }}>leisten kann</em>
+            <em style={{ color: "var(--color-primary)", fontStyle: "italic" }}>leisten können</em>
           </h1>
           <p style={{ fontSize: "1.05rem", color: "var(--color-text-muted)", lineHeight: 1.75, maxWidth: "560px" }}>
-            Als zertifizierter Energieberater biete ich Ihnen das gesamte Spektrum der energetischen
+            Als zertifiziertes Planungsbüro bieten wir Ihnen das gesamte Spektrum der energetischen
             Gebäudeberatung – von der Norm-Heizlastberechnung bis zur vollständigen Effizienzhaus-Begleitung.
           </p>
         </div>
@@ -236,10 +236,10 @@ export default function LeistungenPage() {
               marginBottom: "1.25rem",
             }}
           >
-            Fragen zu meinen Leistungen?
+            Fragen zu unseren Leistungen?
           </h2>
           <p style={{ color: "rgba(250,247,242,0.75)", fontSize: "1rem", lineHeight: 1.7, marginBottom: "2rem" }}>
-            Ich berate Sie gerne persönlich – kostenlos und unverbindlich.
+            Wir beraten Sie gerne persönlich – kostenlos und unverbindlich.
           </p>
           <Link
             href="/kontakt"
