@@ -15,11 +15,6 @@ const qualifications = [
     icon: "✦",
   },
   {
-    label: "KfW-Sachverständiger",
-    detail: "Berechtigt zur Ausstellung von Bestätigungen",
-    icon: "✦",
-  },
-  {
     label: "Staatlich geprüfter Hochbautechniker",
     detail: "Fachkenntnisse in Baukonstruktion und Bauphysik",
     icon: "✦",
