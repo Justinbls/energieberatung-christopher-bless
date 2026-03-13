@@ -251,71 +251,93 @@ export default function Home() {
               <svg viewBox="0 0 420 315" xmlns="http://www.w3.org/2000/svg" style={{ width: "100%", height: "100%", display: "block" }}>
                 <rect width="420" height="315" fill="#F5F0E8" />
 
-                {/* Sun */}
-                <circle cx="370" cy="55" r="32" fill="#C8A87C" />
-                <circle cx="352" cy="65" r="32" fill="none" stroke="#333" strokeWidth="2.5" />
+                {/* ── Header ── */}
+                <text x="22" y="30" fontFamily="sans-serif" fontSize="8" fontWeight="700" letterSpacing="2" fill="#8B4513" textAnchor="start">INDIVIDUELLER SANIERUNGSFAHRPLAN</text>
+                <line x1="22" y1="38" x2="398" y2="38" stroke="#D4C9B8" strokeWidth="1" />
 
-                {/* Ground */}
-                <line x1="20" y1="248" x2="400" y2="248" stroke="#333" strokeWidth="2.5" strokeLinecap="round" />
-
-                {/* Tree left */}
-                <path d="M52,148 C65,142 73,164 70,196 C67,218 34,219 31,196 C28,164 39,142 52,148Z" fill="#6BBF35" stroke="#333" strokeWidth="2" />
-                <line x1="38" y1="167" x2="62" y2="189" stroke="#333" strokeWidth="1.5" />
-                <line x1="35" y1="190" x2="59" y2="212" stroke="#333" strokeWidth="1.5" />
-                <line x1="52" y1="219" x2="52" y2="248" stroke="#333" strokeWidth="2.5" strokeLinecap="round" />
-
-                {/* House insulation layer (dashed, warm glow) */}
-                <path d="M118,178 L118,246 L302,246 L302,178 L210,108 Z" fill="rgba(200,168,124,0.12)" stroke="#C8A87C" strokeWidth="1.5" strokeDasharray="5,4" strokeLinejoin="round" />
-
-                {/* House main */}
-                <path d="M130,185 L130,246 L290,246 L290,185" fill="#F5F0E8" stroke="#333" strokeWidth="2.5" strokeLinejoin="round" strokeLinecap="round" />
+                {/* ── LEFT: mini house with numbered measure pointers ── */}
+                {/* House body */}
+                <path d="M48,175 L48,248 L178,248 L178,175" fill="#F5F0E8" stroke="#333" strokeWidth="2" strokeLinejoin="round" strokeLinecap="round" />
                 {/* Roof */}
-                <polyline points="118,189 210,118 302,189" fill="none" stroke="#333" strokeWidth="2.5" strokeLinejoin="round" strokeLinecap="round" />
-
+                <polyline points="36,179 113,110 190,179" fill="none" stroke="#333" strokeWidth="2" strokeLinejoin="round" strokeLinecap="round" />
                 {/* Door */}
-                <rect x="190" y="210" width="40" height="36" rx="2" fill="none" stroke="#333" strokeWidth="2" />
-                <circle cx="225" cy="228" r="2.5" fill="#333" />
+                <rect x="96" y="214" width="34" height="34" rx="2" fill="none" stroke="#333" strokeWidth="1.8" />
+                <circle cx="126" cy="231" r="2" fill="#333" />
+                {/* Window */}
+                <rect x="56" y="196" width="26" height="21" rx="2" fill="none" stroke="#333" strokeWidth="1.6" />
+                <line x1="69" y1="196" x2="69" y2="217" stroke="#333" strokeWidth="1" />
+                <line x1="56" y1="206" x2="82" y2="206" stroke="#333" strokeWidth="1" />
+                {/* Ground */}
+                <line x1="22" y1="248" x2="198" y2="248" stroke="#333" strokeWidth="2" strokeLinecap="round" />
 
-                {/* Window left */}
-                <rect x="145" y="200" width="30" height="24" rx="2" fill="none" stroke="#333" strokeWidth="1.8" />
-                <line x1="160" y1="200" x2="160" y2="224" stroke="#333" strokeWidth="1.2" />
-                <line x1="145" y1="212" x2="175" y2="212" stroke="#333" strokeWidth="1.2" />
+                {/* Measure pointer: ① Dach / Dämmung */}
+                <circle cx="28" cy="108" r="9" fill="#2D5016" />
+                <text x="28" y="112" textAnchor="middle" fill="#FAF7F2" fontSize="9" fontWeight="700" fontFamily="sans-serif">1</text>
+                <line x1="37" y1="108" x2="76" y2="130" stroke="#2D5016" strokeWidth="1.3" strokeDasharray="3,2" />
 
-                {/* Window right */}
-                <rect x="245" y="200" width="30" height="24" rx="2" fill="none" stroke="#333" strokeWidth="1.8" />
-                <line x1="260" y1="200" x2="260" y2="224" stroke="#333" strokeWidth="1.2" />
-                <line x1="245" y1="212" x2="275" y2="212" stroke="#333" strokeWidth="1.2" />
+                {/* Measure pointer: ② Fassade */}
+                <circle cx="22" cy="190" r="9" fill="#2D5016" />
+                <text x="22" y="194" textAnchor="middle" fill="#FAF7F2" fontSize="9" fontWeight="700" fontFamily="sans-serif">2</text>
+                <line x1="31" y1="190" x2="48" y2="190" stroke="#2D5016" strokeWidth="1.3" strokeDasharray="3,2" />
 
-                {/* Heat arrows (showing energy saving) */}
-                <g stroke="#C8A87C" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" opacity="0.85">
-                  <line x1="315" y1="170" x2="332" y2="170" />
-                  <polyline points="327,165 332,170 327,175" />
-                  <line x1="315" y1="185" x2="332" y2="185" />
-                  <polyline points="327,180 332,185 327,190" />
-                  <line x1="315" y1="200" x2="332" y2="200" />
-                  <polyline points="327,195 332,200 327,205" />
-                </g>
+                {/* Measure pointer: ③ Fenster */}
+                <circle cx="48" cy="268" r="9" fill="#2D5016" />
+                <text x="48" y="272" textAnchor="middle" fill="#FAF7F2" fontSize="9" fontWeight="700" fontFamily="sans-serif">3</text>
+                <line x1="57" y1="264" x2="69" y2="250" stroke="#2D5016" strokeWidth="1.3" strokeDasharray="3,2" />
 
-                {/* Label: Wärmeschutz */}
-                <rect x="334" y="158" width="72" height="56" rx="6" fill="var(--color-primary, #2D5016)" opacity="0.92" />
-                <text x="370" y="177" textAnchor="middle" fill="#FAF7F2" fontSize="7.5" fontFamily="sans-serif" fontWeight="600" letterSpacing="0.5">WÄRME</text>
-                <text x="370" y="188" textAnchor="middle" fill="#FAF7F2" fontSize="7.5" fontFamily="sans-serif" fontWeight="600" letterSpacing="0.5">SCHUTZ</text>
-                <line x1="347" y1="194" x2="393" y2="194" stroke="rgba(250,247,242,0.3)" strokeWidth="1" />
-                <text x="370" y="205" textAnchor="middle" fill="rgba(250,247,242,0.85)" fontSize="11" fontFamily="sans-serif" fontWeight="700">✓</text>
+                {/* Measure pointer: ④ Heizung */}
+                <circle cx="178" cy="268" r="9" fill="#2D5016" />
+                <text x="178" y="272" textAnchor="middle" fill="#FAF7F2" fontSize="9" fontWeight="700" fontFamily="sans-serif">4</text>
+                <line x1="178" y1="259" x2="150" y2="248" stroke="#2D5016" strokeWidth="1.3" strokeDasharray="3,2" />
 
-                {/* Clipboard person right */}
-                <circle cx="88" cy="210" r="11" fill="none" stroke="#333" strokeWidth="2" />
-                <line x1="88" y1="221" x2="88" y2="241" stroke="#333" strokeWidth="2" strokeLinecap="round" />
-                <line x1="88" y1="229" x2="75" y2="238" stroke="#333" strokeWidth="2" strokeLinecap="round" />
-                <line x1="88" y1="229" x2="101" y2="236" stroke="#333" strokeWidth="2" strokeLinecap="round" />
-                <line x1="88" y1="241" x2="82" y2="248" stroke="#333" strokeWidth="2" strokeLinecap="round" />
-                <line x1="88" y1="241" x2="94" y2="248" stroke="#333" strokeWidth="2" strokeLinecap="round" />
-                {/* Clipboard */}
-                <rect x="100" y="226" width="14" height="18" rx="2" fill="none" stroke="#333" strokeWidth="1.8" />
-                <rect x="104" y="223" width="6" height="5" rx="1" fill="none" stroke="#333" strokeWidth="1.5" />
-                <line x1="102" y1="232" x2="112" y2="232" stroke="#333" strokeWidth="1.3" />
-                <line x1="102" y1="237" x2="112" y2="237" stroke="#333" strokeWidth="1.3" />
-                <line x1="102" y1="242" x2="108" y2="242" stroke="#333" strokeWidth="1.3" />
+                {/* ── DIVIDER ── */}
+                <line x1="210" y1="48" x2="210" y2="295" stroke="#D4C9B8" strokeWidth="1" />
+
+                {/* ── RIGHT: 4-step roadmap ── */}
+                {/* Vertical timeline line */}
+                <line x1="242" y1="75" x2="242" y2="272" stroke="#D4C9B8" strokeWidth="1.5" />
+
+                {/* Step 1: Ist-Analyse */}
+                <circle cx="242" cy="82" r="10" fill="#2D5016" />
+                {/* magnifier icon */}
+                <circle cx="241" cy="81" r="4" fill="none" stroke="#FAF7F2" strokeWidth="1.4" />
+                <line x1="244" y1="84" x2="247" y2="87" stroke="#FAF7F2" strokeWidth="1.4" strokeLinecap="round" />
+                <text x="260" y="79" fontFamily="sans-serif" fontSize="9" fontWeight="700" fill="#1C1C1C">Ist-Analyse</text>
+                <text x="260" y="90" fontFamily="sans-serif" fontSize="7.5" fill="#6B6B5A">Gebäudeaufnahme vor Ort</text>
+
+                {/* Step 2: Maßnahmenplan */}
+                <circle cx="242" cy="134" r="10" fill="#2D5016" />
+                {/* list icon */}
+                <line x1="237" y1="131" x2="247" y2="131" stroke="#FAF7F2" strokeWidth="1.4" strokeLinecap="round" />
+                <line x1="237" y1="134" x2="247" y2="134" stroke="#FAF7F2" strokeWidth="1.4" strokeLinecap="round" />
+                <line x1="237" y1="137" x2="244" y2="137" stroke="#FAF7F2" strokeWidth="1.4" strokeLinecap="round" />
+                <text x="260" y="131" fontFamily="sans-serif" fontSize="9" fontWeight="700" fill="#1C1C1C">Maßnahmenplan</text>
+                <text x="260" y="142" fontFamily="sans-serif" fontSize="7.5" fill="#6B6B5A">Stufenweise Sanierung planen</text>
+
+                {/* Step 3: Förderung */}
+                <circle cx="242" cy="186" r="10" fill="#2D5016" />
+                {/* € icon */}
+                <text x="242" y="190" textAnchor="middle" fill="#FAF7F2" fontSize="10" fontWeight="700" fontFamily="sans-serif">€</text>
+                <text x="260" y="183" fontFamily="sans-serif" fontSize="9" fontWeight="700" fill="#1C1C1C">Förderung sichern</text>
+                <text x="260" y="194" fontFamily="sans-serif" fontSize="7.5" fill="#6B6B5A">BAFA &amp; KfW beantragen</text>
+
+                {/* Step 4: Umsetzung */}
+                <circle cx="242" cy="238" r="10" fill="#C8A87C" stroke="#333" strokeWidth="1.5" />
+                {/* checkmark */}
+                <polyline points="237,238 241,242 248,234" fill="none" stroke="#333" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+                <text x="260" y="235" fontFamily="sans-serif" fontSize="9" fontWeight="700" fill="#1C1C1C">Umsetzung &amp; Nachweis</text>
+                <text x="260" y="246" fontFamily="sans-serif" fontSize="7.5" fill="#6B6B5A">Begleitung bis zur Fertigstellung</text>
+
+                {/* ── Legend box bottom left ── */}
+                <rect x="22" y="282" width="176" height="24" rx="5" fill="rgba(45,80,22,0.08)" />
+                <text x="110" y="290" textAnchor="middle" fontFamily="sans-serif" fontSize="7" fontWeight="600" fill="#2D5016" letterSpacing="0.5">FÖRDERFÄHIG NACH GEG</text>
+                <text x="110" y="300" textAnchor="middle" fontFamily="sans-serif" fontSize="7.5" fill="#2D5016">Bis zu 15 % iSFP-Bonus</text>
+
+                {/* ── Energy class strip bottom right ── */}
+                <rect x="222" y="282" width="176" height="24" rx="5" fill="#2D5016" />
+                <text x="266" y="297" textAnchor="middle" fontFamily="sans-serif" fontSize="8" fontWeight="700" fill="#FAF7F2" letterSpacing="0.5">KLASSE D</text>
+                <text x="310" y="297" textAnchor="middle" fontFamily="sans-serif" fontSize="11" fill="#C8A87C">→</text>
+                <text x="354" y="297" textAnchor="middle" fontFamily="sans-serif" fontSize="8" fontWeight="700" fill="#6BBF35" letterSpacing="0.5">KLASSE A</text>
               </svg>
             </div>
           </div>
