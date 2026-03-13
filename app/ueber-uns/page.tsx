@@ -157,103 +157,54 @@ export default function UeberUnsPage() {
               }}
             >
               <svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg" style={{ width: "100%", height: "100%", display: "block" }}>
-                {/* Sky background */}
+                {/* Background */}
                 <rect width="400" height="500" fill="#F5F0E8" />
 
-                {/* Sun */}
-                <circle cx="320" cy="80" r="38" fill="#C8A96E" opacity="0.9" />
-                <circle cx="320" cy="80" r="28" fill="#D4B87A" />
-                {/* Sun rays */}
-                {[0,45,90,135,180,225,270,315].map((deg, i) => {
-                  const rad = (deg * Math.PI) / 180;
-                  return (
-                    <line key={i}
-                      x1={320 + Math.cos(rad) * 44} y1={80 + Math.sin(rad) * 44}
-                      x2={320 + Math.cos(rad) * 56} y2={80 + Math.sin(rad) * 56}
-                      stroke="#C8A96E" strokeWidth="3" strokeLinecap="round"
-                    />
-                  );
-                })}
+                {/* Sun: tan filled circle + offset outline ring – logo style */}
+                <circle cx="302" cy="92" r="50" fill="#C8A87C" />
+                <circle cx="278" cy="106" r="50" fill="none" stroke="#333" strokeWidth="3" />
 
-                {/* Ground */}
-                <rect x="0" y="390" width="400" height="110" fill="#D4EBBC" />
-                <rect x="0" y="390" width="400" height="8" fill="#5DB82A" opacity="0.4" />
+                {/* Background house (right, drawn first so main house covers it) */}
+                <polyline points="282,278 336,212 385,278 385,382 282,382 282,278"
+                  fill="#F5F0E8" stroke="#333" strokeWidth="2.5" strokeLinejoin="round" strokeLinecap="round" />
 
-                {/* House body */}
-                <rect x="110" y="240" width="180" height="155" fill="#FAF7F2" stroke="#2D5016" strokeWidth="3" strokeLinejoin="round" />
+                {/* Tree 1 – left, taller (logo leaf shape with diagonal stripes) */}
+                <path d="M50,220 C67,212 76,240 72,280 C68,308 28,309 24,280 C20,240 33,212 50,220Z"
+                  fill="#6BBF35" stroke="#333" strokeWidth="2.5" />
+                <line x1="34" y1="242" x2="62" y2="268" stroke="#333" strokeWidth="1.8" />
+                <line x1="30" y1="268" x2="58" y2="294" stroke="#333" strokeWidth="1.8" />
+                <line x1="50" y1="309" x2="50" y2="382" stroke="#333" strokeWidth="2.5" strokeLinecap="round" />
 
+                {/* Tree 2 – slightly right, slightly smaller */}
+                <path d="M85,246 C99,239 107,262 104,293 C100,317 68,318 65,293 C61,262 71,239 85,246Z"
+                  fill="#6BBF35" stroke="#333" strokeWidth="2.5" />
+                <line x1="70" y1="263" x2="96" y2="287" stroke="#333" strokeWidth="1.8" />
+                <line x1="67" y1="285" x2="93" y2="309" stroke="#333" strokeWidth="1.8" />
+                <line x1="85" y1="318" x2="85" y2="382" stroke="#333" strokeWidth="2.5" strokeLinecap="round" />
+
+                {/* Main house – outline only, background fill to cover bg house behind it */}
+                <path d="M112,280 L112,382 L186,382 L186,318 L248,318 L248,382 L318,382 L318,280"
+                  fill="#F5F0E8" stroke="#333" strokeWidth="3" strokeLinejoin="round" strokeLinecap="round" />
                 {/* Roof */}
-                <polygon points="90,245 200,140 310,245" fill="#8B4513" stroke="#6B3210" strokeWidth="3" strokeLinejoin="round" />
+                <polyline points="97,284 215,178 333,284"
+                  fill="none" stroke="#333" strokeWidth="3" strokeLinejoin="round" strokeLinecap="round" />
 
-                {/* Chimney */}
-                <rect x="240" y="158" width="22" height="45" fill="#A0522D" stroke="#6B3210" strokeWidth="2.5" />
-                <rect x="236" y="154" width="30" height="8" rx="2" fill="#8B4513" stroke="#6B3210" strokeWidth="2" />
+                {/* Ground line */}
+                <line x1="22" y1="382" x2="388" y2="382" stroke="#333" strokeWidth="3" strokeLinecap="round" />
 
-                {/* Door */}
-                <rect x="175" y="315" width="50" height="80" rx="4" fill="#C8A96E" stroke="#2D5016" strokeWidth="2.5" />
-                <circle cx="218" cy="358" r="4" fill="#2D5016" />
-
-                {/* Windows */}
-                <rect x="125" y="265" width="50" height="45" rx="4" fill="#AED6F0" stroke="#2D5016" strokeWidth="2.5" />
-                <line x1="150" y1="265" x2="150" y2="310" stroke="#2D5016" strokeWidth="1.5" />
-                <line x1="125" y1="287" x2="175" y2="287" stroke="#2D5016" strokeWidth="1.5" />
-
-                <rect x="225" y="265" width="50" height="45" rx="4" fill="#AED6F0" stroke="#2D5016" strokeWidth="2.5" />
-                <line x1="250" y1="265" x2="250" y2="310" stroke="#2D5016" strokeWidth="1.5" />
-                <line x1="225" y1="287" x2="275" y2="287" stroke="#2D5016" strokeWidth="1.5" />
-
-                {/* Tree left */}
-                <rect x="52" y="330" width="10" height="65" rx="3" fill="#8B6B3A" />
-                <ellipse cx="57" cy="295" rx="28" ry="42" fill="#3A7A1A" stroke="#2D5016" strokeWidth="2.5" />
-                <ellipse cx="57" cy="295" rx="18" ry="30" fill="#4A9520" />
-                {/* Tree stripes */}
-                <line x1="50" y1="280" x2="64" y2="295" stroke="#2D5016" strokeWidth="1.5" opacity="0.5" />
-                <line x1="50" y1="300" x2="64" y2="315" stroke="#2D5016" strokeWidth="1.5" opacity="0.5" />
-
-                {/* Tree right */}
-                <rect x="338" y="345" width="9" height="50" rx="3" fill="#8B6B3A" />
-                <ellipse cx="342" cy="312" rx="22" ry="36" fill="#3A7A1A" stroke="#2D5016" strokeWidth="2.5" />
-                <ellipse cx="342" cy="312" rx="14" ry="24" fill="#4A9520" />
-                <line x1="336" y1="300" x2="348" y2="312" stroke="#2D5016" strokeWidth="1.5" opacity="0.5" />
-                <line x1="336" y1="318" x2="348" y2="330" stroke="#2D5016" strokeWidth="1.5" opacity="0.5" />
-
-                {/* Person / consultant */}
-                {/* Body */}
-                <rect x="52" y="390" width="30" height="50" rx="6" fill="#2D5016" />
-                {/* Head */}
-                <circle cx="67" cy="374" r="18" fill="#D4A574" stroke="#2D5016" strokeWidth="2" />
-                {/* Hair */}
-                <path d="M49,370 Q67,350 85,370" fill="#5A3A1A" />
-                {/* Arms */}
-                <line x1="52" y1="400" x2="34" y2="420" stroke="#2D5016" strokeWidth="5" strokeLinecap="round" />
-                <line x1="82" y1="400" x2="100" y2="420" stroke="#2D5016" strokeWidth="5" strokeLinecap="round" />
-                {/* Legs */}
-                <line x1="60" y1="440" x2="55" y2="470" stroke="#1E3610" strokeWidth="6" strokeLinecap="round" />
-                <line x1="74" y1="440" x2="79" y2="470" stroke="#1E3610" strokeWidth="6" strokeLinecap="round" />
+                {/* Person with clipboard – right side, logo line-art style */}
+                <circle cx="354" cy="333" r="13" fill="none" stroke="#333" strokeWidth="2.5" />
+                <line x1="354" y1="346" x2="354" y2="370" stroke="#333" strokeWidth="2.5" strokeLinecap="round" />
+                <line x1="354" y1="354" x2="338" y2="365" stroke="#333" strokeWidth="2.5" strokeLinecap="round" />
+                <line x1="354" y1="354" x2="370" y2="362" stroke="#333" strokeWidth="2.5" strokeLinecap="round" />
+                <line x1="354" y1="370" x2="346" y2="382" stroke="#333" strokeWidth="2.5" strokeLinecap="round" />
+                <line x1="354" y1="370" x2="362" y2="382" stroke="#333" strokeWidth="2.5" strokeLinecap="round" />
                 {/* Clipboard */}
-                <rect x="96" y="408" width="26" height="32" rx="3" fill="#FAF7F2" stroke="#2D5016" strokeWidth="2" />
-                <rect x="104" y="404" width="10" height="7" rx="2" fill="#8B4513" />
-                <line x1="100" y1="418" x2="118" y2="418" stroke="#C8A96E" strokeWidth="1.5" />
-                <line x1="100" y1="425" x2="118" y2="425" stroke="#C8A96E" strokeWidth="1.5" />
-                <line x1="100" y1="432" x2="112" y2="432" stroke="#C8A96E" strokeWidth="1.5" />
-
-                {/* Energy badge / leaf */}
-                <circle cx="340" cy="180" r="22" fill="#2D5016" opacity="0.15" />
-                <path d="M340,165 C340,165 325,172 325,183 C325,192 332,198 340,198 C348,198 355,192 355,183 C355,172 340,165 340,165Z" fill="#5DB82A" stroke="#2D5016" strokeWidth="2" />
-                <line x1="340" y1="198" x2="340" y2="210" stroke="#2D5016" strokeWidth="2" strokeLinecap="round" />
-                <path d="M333,183 C336,178 344,178 347,183" fill="none" stroke="#FAF7F2" strokeWidth="1.5" strokeLinecap="round" />
-
-                {/* Thermometer icon */}
-                <rect x="72" y="148" width="12" height="36" rx="6" fill="#FAF7F2" stroke="#8B4513" strokeWidth="2" />
-                <circle cx="78" cy="188" r="9" fill="#8B4513" stroke="#6B3210" strokeWidth="1.5" />
-                <rect x="75" y="164" width="6" height="22" rx="3" fill="#8B4513" opacity="0.7" />
-                {/* Small ticks */}
-                <line x1="84" y1="158" x2="88" y2="158" stroke="#8B4513" strokeWidth="1.5" />
-                <line x1="84" y1="166" x2="87" y2="166" stroke="#8B4513" strokeWidth="1.5" />
-                <line x1="84" y1="174" x2="88" y2="174" stroke="#8B4513" strokeWidth="1.5" />
-
-                {/* Path / walkway */}
-                <polygon points="185,395 215,395 225,470 175,470" fill="#D4C9B8" opacity="0.7" />
+                <rect x="367" y="357" width="16" height="20" rx="2" fill="none" stroke="#333" strokeWidth="2" />
+                <rect x="372" y="354" width="6" height="6" rx="1" fill="none" stroke="#333" strokeWidth="1.8" />
+                <line x1="370" y1="363" x2="380" y2="363" stroke="#333" strokeWidth="1.5" />
+                <line x1="370" y1="368" x2="380" y2="368" stroke="#333" strokeWidth="1.5" />
+                <line x1="370" y1="373" x2="376" y2="373" stroke="#333" strokeWidth="1.5" />
               </svg>
             </div>
           </div>
