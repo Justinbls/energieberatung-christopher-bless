@@ -53,8 +53,8 @@ export default function Navbar() {
           <Image
             src="/logo2.png.png"
             alt="Planungsbüro Bless"
-            width={scrolled ? 140 : 240}
-            height={scrolled ? 70 : 120}
+            width={scrolled ? 140 : 288}
+            height={scrolled ? 70 : 144}
             style={{ objectFit: "contain", transition: "width 0.3s ease, height 0.3s ease" }}
             priority
           />
