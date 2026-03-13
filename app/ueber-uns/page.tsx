@@ -10,8 +10,8 @@ const qualifications = [
     icon: "✦",
   },
   {
-    label: "BAFA-zugelassen",
-    detail: "Bundesamt für Wirtschaft und Ausfuhrkontrolle",
+    label: "Eingetragener Energieeffizienz Experte",
+    detail: "Listung in der Expertenliste für Förderprogramme des Bundes",
     icon: "✦",
   },
   {
