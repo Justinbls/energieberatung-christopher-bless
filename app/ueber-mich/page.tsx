@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const qualifications = [
   {
@@ -161,41 +162,14 @@ export default function UeberMichPage() {
                 overflow: "hidden",
               }}
             >
-              {/* Decorative background */}
-              <div
-                style={{
-                  position: "absolute",
-                  bottom: 0,
-                  left: 0,
-                  right: 0,
-                  height: "45%",
-                  background: "var(--color-primary)",
-                  opacity: 0.08,
-                }}
+              <Image
+                src="/portrait.jpg.webp"
+                alt="Christopher Bless – Energieberater"
+                fill
+                style={{ objectFit: "cover", borderRadius: "16px" }}
+                sizes="(max-width: 768px) 100vw, 400px"
+                priority
               />
-              <div
-                style={{
-                  width: "120px",
-                  height: "120px",
-                  borderRadius: "50%",
-                  background: "var(--color-surface-dark)",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  marginBottom: "1rem",
-                }}
-              >
-                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="var(--color-text-muted)" strokeWidth="1.5">
-                  <circle cx="24" cy="18" r="8" />
-                  <path d="M8 42c0-8.8 7.2-16 16-16s16 7.2 16 16" strokeLinecap="round" />
-                </svg>
-              </div>
-              <div style={{ fontFamily: "'Playfair Display', serif", fontSize: "1.1rem", fontWeight: 600, color: "var(--color-text)", textAlign: "center" }}>
-                Christopher Bless
-              </div>
-              <div style={{ fontSize: "0.8rem", color: "var(--color-text-muted)", marginTop: "0.25rem" }}>
-                Zertifizierter Energieberater
-              </div>
             </div>
           </div>
         </div>

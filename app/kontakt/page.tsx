@@ -40,6 +40,7 @@ export default function KontaktPage() {
   });
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
@@ -48,9 +49,20 @@ export default function KontaktPage() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
-    await new Promise((r) => setTimeout(r, 1200));
-    setLoading(false);
-    setSubmitted(true);
+    setError("");
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+      if (!res.ok) throw new Error("Fehler beim Senden.");
+      setSubmitted(true);
+    } catch {
+      setError("Die Nachricht konnte nicht gesendet werden. Bitte versuchen Sie es erneut oder schreiben Sie direkt an bless@planungsbuero-bless.de");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -239,6 +251,11 @@ export default function KontaktPage() {
                   />
                 </div>
 
+                {error && (
+                  <div style={{ marginBottom: "1.25rem", padding: "0.9rem 1.25rem", background: "#FEF2F2", border: "1px solid #FECACA", borderRadius: "6px", color: "#B91C1C", fontSize: "0.9rem", lineHeight: 1.5 }}>
+                    {error}
+                  </div>
+                )}
                 <button
                   type="submit"
                   disabled={loading}
