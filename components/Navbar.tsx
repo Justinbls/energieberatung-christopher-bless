@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 const navLinks = [
@@ -31,8 +32,8 @@ export default function Navbar() {
         right: 0,
         zIndex: 100,
         transition: "background 0.3s, box-shadow 0.3s",
-        background: scrolled ? "rgba(250,247,242,0.95)" : "transparent",
-        boxShadow: scrolled ? "0 1px 0 rgba(45,80,22,0.1)" : "none",
+        background: scrolled ? "rgba(250,248,244,0.95)" : "transparent",
+        boxShadow: scrolled ? "0 1px 0 rgba(93,184,42,0.12)" : "none",
         backdropFilter: scrolled ? "blur(12px)" : "none",
       }}
     >
@@ -48,32 +49,15 @@ export default function Navbar() {
         }}
       >
         {/* Logo */}
-        <Link
-          href="/"
-          style={{
-            fontFamily: "'Playfair Display', serif",
-            fontWeight: 700,
-            fontSize: "1.25rem",
-            color: "var(--color-primary)",
-            textDecoration: "none",
-            letterSpacing: "-0.01em",
-          }}
-        >
-          Planungsbüro Bless
-          <span
-            style={{
-              display: "block",
-              fontSize: "0.65rem",
-              fontFamily: "'Source Sans 3', sans-serif",
-              fontWeight: 400,
-              color: "var(--color-text-muted)",
-              letterSpacing: "0.15em",
-              textTransform: "uppercase",
-              marginTop: "-2px",
-            }}
-          >
-            Energieberatung
-          </span>
+        <Link href="/" style={{ display: "flex", alignItems: "center", textDecoration: "none" }}>
+          <Image
+            src="/logo.png.png"
+            alt="Planungsbüro Bless"
+            width={120}
+            height={60}
+            style={{ objectFit: "contain" }}
+            priority
+          />
         </Link>
 
         {/* Desktop nav */}
