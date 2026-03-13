@@ -53,8 +53,8 @@ export default function Navbar() {
           <Image
             src="/logo2.png.png"
             alt="Planungsbüro Bless"
-            width={160}
-            height={80}
+            width={240}
+            height={120}
             style={{ objectFit: "contain" }}
             priority
           />
