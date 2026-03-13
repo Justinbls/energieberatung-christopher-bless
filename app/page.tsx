@@ -351,7 +351,7 @@ export default function Home() {
         <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
           <div style={{ marginBottom: "4rem" }}>
             <div style={{ fontSize: "0.75rem", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--color-secondary)", marginBottom: "1rem", fontWeight: 500 }}>
-              Was ich anbiete
+              Was wir anbieten
             </div>
             <h2
               style={{
@@ -364,7 +364,7 @@ export default function Home() {
               }}
               className="line-accent"
             >
-              Mein Leistungsspektrum
+              Unser Leistungsspektrum
             </h2>
           </div>
 
