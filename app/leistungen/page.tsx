@@ -149,7 +149,7 @@ const services = [
       "Optimierung von Anschlussdetails (Fenster, Attika, Bodenplatte)",
       "Verbesserung des Energieausweises durch Reduktion der Wärmeverluste",
     ],
-    benefit: "Schimmelfreiheit und bis zu 10 % besserer Energieausweis",
+    benefit: "Oft der entscheidende Schritt zur nächsten Effizienzhaus-Stufe",
     color: "#8B4513",
   },
 ];
