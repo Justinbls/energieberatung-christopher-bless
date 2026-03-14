@@ -120,7 +120,7 @@ const services = [
     id: "lca",
     number: "07",
     title: "Lebenszyklusanalyse (LCA)",
-    norm: "DIN EN 15978 / ÖKOBAUDAT",
+    norm: "DIN EN ISO 14040",
     tagline: "Ökologische Bewertung über den gesamten Lebenszyklus",
     description: `Die Lebenszyklusanalyse (LCA) bewertet die Umweltwirkungen eines Gebäudes von der Herstellung der Baustoffe bis zum Rückbau.
     Sie ist Pflichtbestandteil für das Qualitätssiegel Nachhaltiges Gebäude (QNG) sowie für die KfW-Förderung klimafreundlicher Neubauten.`,

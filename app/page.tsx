@@ -87,7 +87,7 @@ const services = [
       </svg>
     ),
     title: "Lebenszyklusanalyse (LCA)",
-    subtitle: "DIN EN 15978 / ÖKOBAUDAT",
+    subtitle: "DIN EN ISO 14040",
     description: "Ökologische Bewertung des Gebäudes über den gesamten Lebenszyklus – Pflichtnachweis für QNG-Siegel und KfW-Klimabonus.",
     href: "/leistungen#lca",
   },
