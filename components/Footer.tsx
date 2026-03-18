@@ -52,8 +52,8 @@ export default function Footer() {
             <Image
               src="/dena.png"
               alt="Deutsche Energie-Agentur (dena)"
-              width={120}
-              height={48}
+              width={240}
+              height={96}
               style={{ objectFit: "contain", opacity: 0.85 }}
             />
           </div>
