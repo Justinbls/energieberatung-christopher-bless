@@ -47,7 +47,7 @@ export const metadata: Metadata = {
       "Ihr Energieberater in Mönchengladbach: Sanierungsfahrplan (iSFP) erstellen lassen, Heizlastberechnung, Hydraulischer Abgleich & Effizienzhaus-Begleitung. BAFA Zuschuss bis zu 80 %.",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/opengraph-image",
         width: 1200,
         height: 630,
         alt: "Planungsbüro Bless – Energieberater Mönchengladbach",
@@ -75,7 +75,7 @@ const jsonLd = {
   url: "https://www.planungsbuero-bless.de",
   telephone: "+491725377710",
   email: "info@planungsbuero-bless.de",
-  image: "https://www.planungsbuero-bless.de/og-image.jpg",
+  image: "https://www.planungsbuero-bless.de/opengraph-image",
   priceRange: "€€",
   currenciesAccepted: "EUR",
   paymentAccepted: "Überweisung, Rechnung",
