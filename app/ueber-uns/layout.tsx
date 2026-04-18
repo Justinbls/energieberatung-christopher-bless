@@ -22,6 +22,14 @@ export const metadata: Metadata = {
     description:
       "Ihr Energieeffizienz-Experte in Mönchengladbach mit 10 Jahren Erfahrung. Gebäudeenergieberater (HWK), eingetragener Experte für BAFA & KfW Förderprogramme.",
     url: "https://www.planungsbuero-bless.de/ueber-uns",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Christopher Bless – Energieberater Mönchengladbach",
+      },
+    ],
   },
 };
 

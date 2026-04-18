@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+import ConditionalLayout from "@/components/ConditionalLayout";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.planungsbuero-bless.de"),
@@ -46,6 +45,14 @@ export const metadata: Metadata = {
     title: "Energieberater Mönchengladbach – Planungsbüro Bless | iSFP & Sanierungsfahrplan",
     description:
       "Ihr Energieberater in Mönchengladbach: Sanierungsfahrplan (iSFP) erstellen lassen, Heizlastberechnung, Hydraulischer Abgleich & Effizienzhaus-Begleitung. BAFA Zuschuss bis zu 80 %.",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Planungsbüro Bless – Energieberater Mönchengladbach",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
@@ -61,12 +68,17 @@ export const metadata: Metadata = {
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
+  "@id": "https://www.planungsbuero-bless.de/#business",
   name: "Planungsbüro Bless",
   description:
     "Zertifizierter Energieberater in Mönchengladbach. Heizlastberechnung, Hydraulischer Abgleich, Sanierungsfahrplan und Effizienzhaus-Begleitung.",
   url: "https://www.planungsbuero-bless.de",
   telephone: "+491725377710",
   email: "info@planungsbuero-bless.de",
+  image: "https://www.planungsbuero-bless.de/og-image.jpg",
+  priceRange: "€€",
+  currenciesAccepted: "EUR",
+  paymentAccepted: "Überweisung, Rechnung",
   founder: { "@type": "Person", name: "Christopher Bless" },
   address: {
     "@type": "PostalAddress",
@@ -106,6 +118,9 @@ const jsonLd = {
     opens: "08:00",
     closes: "18:00",
   },
+  sameAs: [
+    "https://www.planungsbuero-bless.de",
+  ],
 };
 
 export default function RootLayout({
@@ -120,9 +135,7 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
-        <Navbar />
-        <main>{children}</main>
-        <Footer />
+        <ConditionalLayout>{children}</ConditionalLayout>
       </body>
     </html>
   );

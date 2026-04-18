@@ -21,25 +21,25 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${base}/ueber-uns`,
       lastModified: now,
       changeFrequency: "monthly",
-      priority: 0.8,
+      priority: 0.7,
     },
     {
       url: `${base}/kontakt`,
       lastModified: now,
-      changeFrequency: "yearly",
-      priority: 0.7,
+      changeFrequency: "monthly",
+      priority: 0.8,
     },
     {
       url: `${base}/impressum`,
       lastModified: now,
       changeFrequency: "yearly",
-      priority: 0.2,
+      priority: 0.3,
     },
     {
       url: `${base}/datenschutz`,
       lastModified: now,
       changeFrequency: "yearly",
-      priority: 0.2,
+      priority: 0.3,
     },
   ];
 }

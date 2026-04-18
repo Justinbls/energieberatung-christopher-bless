@@ -24,6 +24,14 @@ export const metadata: Metadata = {
     description:
       "Heizlastberechnung nach DIN EN 12831, Hydraulischer Abgleich, Wärmeschutznachweis, Sanierungsfahrplan (iSFP) und Energetische Baubegleitung KfW – alle Leistungen in Mönchengladbach.",
     url: "https://www.planungsbuero-bless.de/leistungen",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Leistungen – Planungsbüro Bless Mönchengladbach",
+      },
+    ],
   },
 };
 

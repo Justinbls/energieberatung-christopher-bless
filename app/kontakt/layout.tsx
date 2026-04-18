@@ -22,6 +22,14 @@ export const metadata: Metadata = {
     description:
       "Kostenloses Erstgespräch zur Energieberatung anfragen. BAFA Zuschuss & KfW Förderung 2026 – Antwort innerhalb von 24 Stunden.",
     url: "https://www.planungsbuero-bless.de/kontakt",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Kontakt – Planungsbüro Bless Mönchengladbach",
+      },
+    ],
   },
 };
 

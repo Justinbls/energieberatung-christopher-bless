@@ -3,6 +3,15 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Impressum – Planungsbüro Bless",
+  description:
+    "Impressum des Planungsbüro Bless in Mönchengladbach. Angaben gemäß § 5 DDG, Kontakt und rechtliche Informationen.",
+  robots: {
+    index: false,
+    follow: false,
+  },
+  alternates: {
+    canonical: "https://www.planungsbuero-bless.de/impressum",
+  },
 };
 
 export default function ImpressumPage() {

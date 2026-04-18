@@ -2,7 +2,16 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Datenschutz – Planungsbüro Bless",
+  title: "Datenschutzerklärung – Planungsbüro Bless",
+  description:
+    "Datenschutzerklärung des Planungsbüro Bless in Mönchengladbach. Informationen zur Verarbeitung personenbezogener Daten gemäß DSGVO.",
+  robots: {
+    index: false,
+    follow: false,
+  },
+  alternates: {
+    canonical: "https://www.planungsbuero-bless.de/datenschutz",
+  },
 };
 
 export default function DatenschutzPage() {
