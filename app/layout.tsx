@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import ConditionalLayout from "@/components/ConditionalLayout";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.planungsbuero-bless.de"),
@@ -135,7 +136,9 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
-        <ConditionalLayout>{children}</ConditionalLayout>
+        <Navbar />
+        <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );
