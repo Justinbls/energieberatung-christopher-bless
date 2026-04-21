@@ -19,7 +19,7 @@ const faqItems = [
   {
     question: "Was kostet ein Wärmeschutznachweis?",
     answer:
-      "Je nach Gebäudegröße und Komplexität liegen die Kosten für ein Einfamilienhaus zwischen 400 und 900 €.",
+      "Der Aufwand hängt von Gebäudegröße und Komplexität des Bauvorhabens ab. Sprechen Sie uns an – in einer kostenlosen Erstberatung klären wir den Umfang und erstellen ein individuelles Angebot.",
   },
   {
     question: "Was ist der Unterschied zwischen Wärmeschutznachweis und Energieausweis?",
@@ -295,13 +295,13 @@ export default function WaermeschutznachweisSeitePage() {
           </p>
 
           <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: "1.5rem", fontWeight: 700, color: "var(--color-text)", marginBottom: "1rem" }}>
-            Kosten und Ablauf des Wärmeschutznachweises
+            Ablauf des Wärmeschutznachweises
           </h2>
           <p style={{ fontSize: "1rem", color: "var(--color-text-muted)", lineHeight: 1.8, marginBottom: "2.5rem" }}>
-            Die Kosten für einen Wärmeschutznachweis liegen je nach Gebäudegröße und Komplexität
-            zwischen 400 und 900 € netto für ein Einfamilienhaus. Der Ablauf bei Planungsbüro Bless:
+            Der Aufwand richtet sich nach Gebäudegröße und Komplexität – sprechen Sie uns für ein
+            individuelles Angebot an. Der Ablauf bei Planungsbüro Bless:
             Zunächst werden alle Planungsunterlagen übermittelt (Grundrisse, Schnitte, Ansichten,
-            Bauteilaufbauten). Christopher Bless erstellt daraus die vollständige Energiebilanz,
+            Bauteilaufbauten). Wir erstellen daraus die vollständige Energiebilanz,
             prüft die GEG-Konformität und erstellt die prüffähige Dokumentation. Nach Freigabe
             durch den Auftraggeber wird der Nachweis dem Architekten oder direkt der Baubehörde
             zur Verfügung gestellt. Die Bearbeitungszeit beträgt in der Regel 5–10 Werktage nach

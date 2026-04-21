@@ -14,7 +14,7 @@ const faqItems = [
   {
     question: "Was kostet ein iSFP für ein Einfamilienhaus?",
     answer:
-      "Die Kosten für einen iSFP liegen je nach Gebäudegröße zwischen 700 und 1.700 €. Die BAFA fördert 80 % der Beratungskosten – bei einem Einfamilienhaus also bis zu 1.300 €. In vielen Fällen ist der iSFP damit fast kostenneutral.",
+      "Die Kosten hängen von Gebäudegröße und Zustand ab. Da die BAFA einen Großteil der Beratungskosten fördert, ist der iSFP in vielen Fällen sehr günstig – den genauen Eigenanteil klären wir in einer kostenlosen Erstberatung mit Ihnen.",
   },
   {
     question: "Wie lange ist ein iSFP gültig?",
@@ -271,13 +271,10 @@ export default function SanierungsfahrplanPage() {
           </h2>
           <p style={{ fontSize: "1rem", color: "var(--color-text-muted)", lineHeight: 1.8, marginBottom: "2rem" }}>
             Die BAFA (Bundesamt für Wirtschaft und Ausfuhrkontrolle) bezuschusst die Erstellung
-            eines iSFP mit bis zu 80 % der anerkannten Beratungskosten. Für ein Einfamilienhaus
-            bedeutet das: Bei Gesamtkosten von 1.000 € übernimmt die BAFA bis zu 800 €, sodass
-            für den Eigentümer nur 200 € Eigenanteil verbleiben. Der iSFP ist damit in vielen
-            Fällen nahezu kostenneutral. Die Beantragung der Förderung erfolgt durch den
-            Energieberater – Christopher Bless übernimmt die gesamte Antragstellung für Sie.
-            Förderfähig sind Beratungskosten zwischen 400 und 1.000 € netto, je nach Gebäudegröße
-            und Aufwand.
+            eines iSFP mit bis zu 80 % der anerkannten Beratungskosten – in vielen Fällen ist der
+            iSFP damit nahezu kostenneutral. Die Beantragung der Förderung übernehmen wir
+            vollständig für Sie. In einer kostenlosen Erstberatung erklären wir Ihnen, welcher
+            Eigenanteil in Ihrem konkreten Fall zu erwarten ist.
           </p>
 
           <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: "1.5rem", fontWeight: 700, color: "var(--color-text)", marginBottom: "1rem" }}>

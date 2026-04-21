@@ -24,7 +24,7 @@ const faqItems = [
   {
     question: "Was kostet ein hydraulischer Abgleich?",
     answer:
-      "Die Kosten hängen von der Größe der Heizungsanlage ab. Für ein Einfamilienhaus rechnen Sie mit 300–800 €. Durch BAFA-Förderung werden bis zu 15 % der förderfähigen Kosten bezuschusst.",
+      "Der Aufwand hängt von der Größe und Komplexität Ihrer Heizungsanlage ab. In einer kostenlosen Erstberatung klären wir gemeinsam den Umfang und die mögliche BAFA-Förderung für Sie.",
   },
   {
     question: "Wie lange dauert ein hydraulischer Abgleich?",
@@ -305,10 +305,9 @@ export default function HydraulischerAbgleichPage() {
             zertifizierter Energieeffizienz-Experte durch. Zunächst werden alle Gebäudedaten
             erfasst: Grundrisse, Heizkörpergrößen, Dämmstandard und die vorhandene Heizungsanlage.
             Auf dieser Basis erstellt Planungsbüro Bless die raumweise Heizlastberechnung, aus der
-            die Sollvolumenströme für jeden Heizkörper abgeleitet werden. Die Kosten für den
-            hydraulischen Abgleich nach Verfahren B liegen typischerweise zwischen 300 und 800 €
-            für ein Einfamilienhaus – ein Betrag, der durch die BAFA-Förderung im Rahmen der
-            Heizungsoptimierung teilweise gefördert werden kann.
+            die Sollvolumenströme für jeden Heizkörper abgeleitet werden. Den genauen Aufwand
+            klären wir in einer kostenlosen Erstberatung – je nach Anlagengröße und Umfang
+            erstellen wir ein individuelles Angebot für Sie.
           </p>
 
           <div style={{ borderTop: "1px solid var(--color-border)", paddingTop: "1.5rem", display: "flex", alignItems: "center", gap: "1rem" }}>

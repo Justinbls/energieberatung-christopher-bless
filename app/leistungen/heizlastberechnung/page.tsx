@@ -14,7 +14,7 @@ const faqItems = [
   {
     question: "Was kostet eine Heizlastberechnung?",
     answer:
-      "Für ein typisches Einfamilienhaus liegen die Kosten zwischen 300 und 600 €. Durch BAFA-Förderung können bis zu 80 % der Beratungskosten bezuschusst werden.",
+      "Der Aufwand hängt vom Gebäudetyp und der Anzahl der Räume ab. In einer kostenlosen Erstberatung klären wir gemeinsam den Umfang und erstellen ein individuelles Angebot für Sie.",
   },
   {
     question: "Wann ist eine Heizlastberechnung Pflicht?",
