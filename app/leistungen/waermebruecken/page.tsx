@@ -64,7 +64,7 @@ export default function WaermebrueckenPage() {
 
       <nav
         style={{
-          paddingTop: "120px",
+          paddingTop: "200px",
           paddingLeft: "2rem",
           paddingRight: "2rem",
           paddingBottom: "0",
