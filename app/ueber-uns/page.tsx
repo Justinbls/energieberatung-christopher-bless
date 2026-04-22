@@ -162,7 +162,7 @@ export default function UeberUnsPage() {
                 marginBottom: "1.5rem",
               }}
             >
-              Christopher Bless –
+              Planungsbüro Bless –
               <br />
               <em style={{ color: "var(--color-primary)", fontStyle: "italic" }}>Ihr Energieberater</em>
             </h1>
