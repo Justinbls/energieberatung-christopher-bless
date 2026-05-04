@@ -35,6 +35,7 @@ export default function PartnerprogrammPage() {
     finanzierung: "",
     // Heizung
     bisherigHeizung: "",
+    baujahrHeizung: "",
     heizleistung: "",
     jahresverbrauch: "",
     abrechnungFachplanung: "",
@@ -117,19 +118,19 @@ export default function PartnerprogrammPage() {
 
               <div style={gridTwo}>
                 <Field label="Firmenname" required>
-                  <input type="text" required placeholder="Mustermann Heizungsbau GmbH" value={form.partnerFirma} onChange={(e) => update("partnerFirma", e.target.value)} style={inputStyle} />
+                  <input type="text" required value={form.partnerFirma} onChange={(e) => update("partnerFirma", e.target.value)} style={inputStyle} />
                 </Field>
                 <Field label="Ansprechpartner" required>
-                  <input type="text" required placeholder="Max Mustermann" value={form.partnerAnsprechpartner} onChange={(e) => update("partnerAnsprechpartner", e.target.value)} style={inputStyle} />
+                  <input type="text" required value={form.partnerAnsprechpartner} onChange={(e) => update("partnerAnsprechpartner", e.target.value)} style={inputStyle} />
                 </Field>
               </div>
 
               <div style={gridTwo}>
                 <Field label="Ihre E-Mail" required>
-                  <input type="email" required placeholder="ihre@firma.de" value={form.partnerEmail} onChange={(e) => update("partnerEmail", e.target.value)} style={inputStyle} />
+                  <input type="email" required value={form.partnerEmail} onChange={(e) => update("partnerEmail", e.target.value)} style={inputStyle} />
                 </Field>
                 <Field label="Ihr Telefon" required>
-                  <input type="tel" required placeholder="+49 160 000 0000" value={form.partnerTelefon} onChange={(e) => update("partnerTelefon", e.target.value)} style={inputStyle} />
+                  <input type="tel" required value={form.partnerTelefon} onChange={(e) => update("partnerTelefon", e.target.value)} style={inputStyle} />
                 </Field>
               </div>
             </div>
@@ -140,39 +141,39 @@ export default function PartnerprogrammPage() {
 
               <div style={gridTwo}>
                 <Field label="Vorname" required>
-                  <input type="text" required placeholder="Christine" value={form.kundeVorname} onChange={(e) => update("kundeVorname", e.target.value)} style={inputStyle} />
+                  <input type="text" required value={form.kundeVorname} onChange={(e) => update("kundeVorname", e.target.value)} style={inputStyle} />
                 </Field>
                 <Field label="Nachname" required>
-                  <input type="text" required placeholder="Kellermann" value={form.kundeNachname} onChange={(e) => update("kundeNachname", e.target.value)} style={inputStyle} />
+                  <input type="text" required value={form.kundeNachname} onChange={(e) => update("kundeNachname", e.target.value)} style={inputStyle} />
                 </Field>
               </div>
 
               <div style={gridThree}>
                 <div style={{ gridColumn: "span 2" }}>
                   <Field label="Straße" required>
-                    <input type="text" required placeholder="Musterstraße" value={form.kundeStrasse} onChange={(e) => update("kundeStrasse", e.target.value)} style={inputStyle} />
+                    <input type="text" required value={form.kundeStrasse} onChange={(e) => update("kundeStrasse", e.target.value)} style={inputStyle} />
                   </Field>
                 </div>
                 <Field label="Hausnummer" required>
-                  <input type="text" required placeholder="18" value={form.kundeHausnummer} onChange={(e) => update("kundeHausnummer", e.target.value)} style={inputStyle} />
+                  <input type="text" required value={form.kundeHausnummer} onChange={(e) => update("kundeHausnummer", e.target.value)} style={inputStyle} />
                 </Field>
               </div>
 
               <div style={gridTwo}>
                 <Field label="Postleitzahl" required>
-                  <input type="text" required placeholder="41844" value={form.kundePlz} onChange={(e) => update("kundePlz", e.target.value)} style={inputStyle} />
+                  <input type="text" required value={form.kundePlz} onChange={(e) => update("kundePlz", e.target.value)} style={inputStyle} />
                 </Field>
                 <Field label="Ort" required>
-                  <input type="text" required placeholder="Wegberg" value={form.kundeOrt} onChange={(e) => update("kundeOrt", e.target.value)} style={inputStyle} />
+                  <input type="text" required value={form.kundeOrt} onChange={(e) => update("kundeOrt", e.target.value)} style={inputStyle} />
                 </Field>
               </div>
 
               <div style={gridTwo}>
                 <Field label="E-Mail des Kunden" required>
-                  <input type="email" required placeholder="kunde@email.de" value={form.kundeEmail} onChange={(e) => update("kundeEmail", e.target.value)} style={inputStyle} />
+                  <input type="email" required value={form.kundeEmail} onChange={(e) => update("kundeEmail", e.target.value)} style={inputStyle} />
                 </Field>
                 <Field label="Telefon des Kunden" required>
-                  <input type="tel" required placeholder="+49 170 0000000" value={form.kundeTelefon} onChange={(e) => update("kundeTelefon", e.target.value)} style={inputStyle} />
+                  <input type="tel" required value={form.kundeTelefon} onChange={(e) => update("kundeTelefon", e.target.value)} style={inputStyle} />
                 </Field>
               </div>
             </div>
@@ -182,26 +183,26 @@ export default function PartnerprogrammPage() {
               <h2 style={sectionTitleStyle}>Objekt</h2>
 
               <Field label="Projektbezeichnung">
-                <input type="text" placeholder='z. B. „Kellermann, Wegberg"' value={form.projektbezeichnung} onChange={(e) => update("projektbezeichnung", e.target.value)} style={inputStyle} />
+                <input type="text" value={form.projektbezeichnung} onChange={(e) => update("projektbezeichnung", e.target.value)} style={inputStyle} />
               </Field>
 
               <div style={gridThree}>
                 <div style={{ gridColumn: "span 2" }}>
                   <Field label="Straße" required>
-                    <input type="text" required placeholder="Objektstraße" value={form.objektStrasse} onChange={(e) => update("objektStrasse", e.target.value)} style={inputStyle} />
+                    <input type="text" required value={form.objektStrasse} onChange={(e) => update("objektStrasse", e.target.value)} style={inputStyle} />
                   </Field>
                 </div>
                 <Field label="Hausnummer" required>
-                  <input type="text" required placeholder="18" value={form.objektHausnummer} onChange={(e) => update("objektHausnummer", e.target.value)} style={inputStyle} />
+                  <input type="text" required value={form.objektHausnummer} onChange={(e) => update("objektHausnummer", e.target.value)} style={inputStyle} />
                 </Field>
               </div>
 
               <div style={gridTwo}>
                 <Field label="Postleitzahl" required>
-                  <input type="text" required placeholder="41844" value={form.objektPlz} onChange={(e) => update("objektPlz", e.target.value)} style={inputStyle} />
+                  <input type="text" required value={form.objektPlz} onChange={(e) => update("objektPlz", e.target.value)} style={inputStyle} />
                 </Field>
                 <Field label="Ort" required>
-                  <input type="text" required placeholder="Wegberg" value={form.objektOrt} onChange={(e) => update("objektOrt", e.target.value)} style={inputStyle} />
+                  <input type="text" required value={form.objektOrt} onChange={(e) => update("objektOrt", e.target.value)} style={inputStyle} />
                 </Field>
               </div>
             </div>
@@ -221,25 +222,25 @@ export default function PartnerprogrammPage() {
                   </select>
                 </Field>
                 <Field label="Datum des Bauantrags / Baujahr" required>
-                  <input type="text" required placeholder="1995" value={form.baujahr} onChange={(e) => update("baujahr", e.target.value)} style={inputStyle} />
+                  <input type="text" required value={form.baujahr} onChange={(e) => update("baujahr", e.target.value)} style={inputStyle} />
                 </Field>
               </div>
 
               <div style={gridTwo}>
                 <Field label="Anzahl der Wohneinheiten" required>
-                  <input type="number" required min="0" placeholder="1" value={form.anzahlWohneinheiten} onChange={(e) => update("anzahlWohneinheiten", e.target.value)} style={inputStyle} />
+                  <input type="number" required min="0" value={form.anzahlWohneinheiten} onChange={(e) => update("anzahlWohneinheiten", e.target.value)} style={inputStyle} />
                 </Field>
                 <Field label="Beheizte Wohnfläche (m²)" required>
-                  <input type="number" required min="0" placeholder="140" value={form.wohnflaeche} onChange={(e) => update("wohnflaeche", e.target.value)} style={inputStyle} />
+                  <input type="number" required min="0" value={form.wohnflaeche} onChange={(e) => update("wohnflaeche", e.target.value)} style={inputStyle} />
                 </Field>
               </div>
 
               <div style={gridTwo}>
                 <Field label="Anzahl der Gewerbeeinheiten">
-                  <input type="number" min="0" placeholder="0" value={form.anzahlGewerbeeinheiten} onChange={(e) => update("anzahlGewerbeeinheiten", e.target.value)} style={inputStyle} />
+                  <input type="number" min="0" value={form.anzahlGewerbeeinheiten} onChange={(e) => update("anzahlGewerbeeinheiten", e.target.value)} style={inputStyle} />
                 </Field>
                 <Field label="Beheizte Gewerbefläche (m²)">
-                  <input type="number" min="0" placeholder="0" value={form.gewerbeflaeche} onChange={(e) => update("gewerbeflaeche", e.target.value)} style={inputStyle} />
+                  <input type="number" min="0" value={form.gewerbeflaeche} onChange={(e) => update("gewerbeflaeche", e.target.value)} style={inputStyle} />
                 </Field>
               </div>
 
@@ -276,13 +277,19 @@ export default function PartnerprogrammPage() {
                     <option>Sonstiges</option>
                   </select>
                 </Field>
+                <Field label="Baujahr der Heizung" required>
+                  <input type="text" required value={form.baujahrHeizung} onChange={(e) => update("baujahrHeizung", e.target.value)} style={inputStyle} />
+                </Field>
+              </div>
+
+              <div style={gridTwo}>
                 <Field label="Geschätzte Heizleistung (kW)" required>
-                  <input type="number" required min="0" placeholder="7" value={form.heizleistung} onChange={(e) => update("heizleistung", e.target.value)} style={inputStyle} />
+                  <input type="number" required min="0" value={form.heizleistung} onChange={(e) => update("heizleistung", e.target.value)} style={inputStyle} />
                 </Field>
               </div>
 
               <Field label="Jährlicher Wärmebedarf (kWh)" required>
-                <input type="number" required min="0" placeholder="16000" value={form.jahresverbrauch} onChange={(e) => update("jahresverbrauch", e.target.value)} style={inputStyle} />
+                <input type="number" required min="0" value={form.jahresverbrauch} onChange={(e) => update("jahresverbrauch", e.target.value)} style={inputStyle} />
               </Field>
 
               <Field label="Abrechnung der Fachplanung gemäß aktuellem LV" required>
@@ -310,7 +317,7 @@ export default function PartnerprogrammPage() {
               <Field label="Anmerkungen / Besonderheiten">
                 <textarea
                   rows={4}
-                  placeholder="z. B. BAFA-Antrag bereits gestellt, besondere Gegebenheiten am Objekt …"
+                  placeholder=""
                   value={form.anmerkungen}
                   onChange={(e) => update("anmerkungen", e.target.value)}
                   style={{ ...inputStyle, resize: "vertical", lineHeight: 1.6 }}

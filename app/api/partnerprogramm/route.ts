@@ -72,6 +72,7 @@ async function generatePDF(data: Record<string, string>): Promise<Uint8Array> {
 
   sectionTitle("Heizungsanlage");
   field("Bisheriges Heizungssystem", data.bisherigHeizung);
+  field("Baujahr der Heizung", data.baujahrHeizung);
   field("Geschätzte Heizleistung", data.heizleistung ? `${data.heizleistung} kW` : "");
   field("Jährlicher Wärmebedarf", data.jahresverbrauch ? `${data.jahresverbrauch} kWh` : "");
   field("Abrechnung Fachplanung", data.abrechnungFachplanung);
